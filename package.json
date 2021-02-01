@@ -1,0 +1,29 @@
+{
+  "name": "teste-front-end",
+  "version": "1.0.0",
+  "description": "Teste Front-End",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/igorpratess/Teste-Front-end.git"
+  },
+  "keywords": [
+    "js",
+    "css",
+    "html"
+  ],
+  "author": "Igor Prates Gonçalves",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/igorpratess/Teste-Front-end/issues"
+  },
+  "homepage": "https://github.com/igorpratess/Teste-Front-end#readme",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1"
+  }
+}
