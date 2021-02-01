@@ -7,4 +7,5 @@
 - Dentro da pasta, digitar no cmd: npm i
 - Depois de tudo instalado
 - No cmd digite: node server.js
-- Abra o browser e digite localhost:300
+- Abra o browser e digite localhost:3000
+- Caso não funcione, tente http://127.0.0.1/
