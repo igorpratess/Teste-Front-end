@@ -189,7 +189,6 @@ li {
 
 .carousel {
   position: relative;
-  padding-top: 44.9%;
   z-index: -1;
   perspective: 100px;
 }
@@ -201,7 +200,7 @@ li {
   bottom: 0;
   left: 0;
   display: flex;
-  overflow-x: scroll;
+  overflow-x: hidden;
   counter-reset: item;
   scroll-behavior: smooth;
   scroll-snap-type: x mandatory;
@@ -249,7 +248,7 @@ li {
 
 .carousel__navigation {
   position: absolute;
-  top: 42%;
+  top: 33%;
   left: 47%;
 }
 
@@ -313,6 +312,7 @@ li {
 
 .list {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .list li {
@@ -336,6 +336,7 @@ li {
   justify-content: center;
   align-items: center;
   padding-bottom: 10px;
+  margin-top: -6px;
 }
 
 .card:hover > .div-hover > .btn {
@@ -510,4 +511,229 @@ li {
   padding: 6px;
   width: 40%;
   cursor: pointer;
+}
+
+.h-100 {
+  height: 100%;
+}
+
+.mh-3 {
+  max-height: 348px;
+}
+
+#wave {
+  transform: rotate(90deg) rotateX(200deg);
+  margin-left: 450px;
+  position: absolute;
+  width: 310px;
+  height: 100px;
+}
+
+.menuSandwich {
+  display: none;
+}
+
+.menuSandwich div {
+  width: 35px;
+  height: 5px;
+  background-color: black;
+  margin: 6px 0;
+}
+
+@media (max-width: 1616px) {
+  #wave {
+    margin-left: 390px;
+  }
+}
+
+@media (max-width: 1372px) {
+  #wave {
+    margin-left: 330px;
+  }
+}
+
+@media (max-width: 1236px) {
+  .form button {
+    width: 10%;
+  }
+}
+
+@media (max-width: 1179px) {
+  #wave {
+    margin-left: 270px;
+    width: 347px;
+  }
+}
+
+@media (max-width: 1008px) {
+  #wave {
+    display: none;
+  }
+  .texts {
+    position: absolute;
+  }
+  .images {
+    height: 300px;
+    background-color: #00000061;
+  }
+  .carousel__navigation {
+    width: 100%;
+    text-align: center;
+    left: 0;
+  }
+  .div-text {
+    position: absolute;
+    z-index: 100000;
+    left: 0;
+    width: 1008px;
+    top: 80px;
+    font-size: 25px;
+    text-align: center;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 908px) {
+  .div-text {
+    width: 900px;
+  }
+  .form button {
+    width: 12%;
+  }
+}
+
+@media (max-width: 800px) {
+  .carousel__navigation {
+    top: 33%;
+  }
+  .div-text {
+    width: 900px;
+  }
+  .menuSandwich {
+    display: block;
+  }
+  .navbar li:nth-child(3), .navbar li:nth-child(4) {
+    display: none;
+  }
+  .navbar {
+    justify-content: space-around;
+  }
+  .list li {
+    flex: 1 0 50%;
+  } 
+  .div-hover .btn {
+    width: 90%;
+    display: block;
+  }
+  .card p {
+    height: 16px;
+  }
+  .form {
+    flex-wrap: wrap;
+  }
+  .form div {
+    flex: 1 0 80%;
+    margin: 0;
+    margin-bottom: 15px;
+
+  }
+  .form button {
+    width: 21%;
+    margin: 0;
+  }
+
+}
+
+@media (max-width: 700px) {
+  .div-text {
+    width: 700px;
+  }
+}
+
+@media (max-width: 600px) {
+  .div-text {
+    width: 600px;
+  }
+  .footer .fluid {
+    flex-wrap: wrap;
+  }
+  .footer .col-3 {
+    flex: 1 0 60%;
+  }
+  .footer p {
+    line-height: 21px;
+  }
+  .footer .col-3:nth-child(2) {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  .footer .col-3:nth-child(3) {
+    justify-content: space-evenly;
+  }
+}
+
+@media (max-width: 500px) {
+  .div-text {
+    width: 500px;
+    font-size: 20px;
+  }
+  .card {
+    width: 190px;
+  }
+  .triangulo {
+    right: -114px;
+    top: 59px;
+  }
+  .div-hover {
+    margin-top: -18px;
+  }
+  .card p {
+    height: 14px;
+  }
+  .form button {
+    width: 40%;
+    margin: 0;
+  }
+  .footer button {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 400px) {
+  .div-text {
+    width: 400px;
+    font-size: 15px;
+  }
+  .card {
+    width: 135px;
+  }
+  .triangulo {
+    right: -60px;
+    top: 85px;
+  }
+  .div-hover {
+    margin-top: -18px;
+  }
+  .card p {
+    height: 30px;
+  }
+}
+
+@media (max-width: 300px) {
+  .div-text {
+    width: 300px;
+  }
+  .card {
+    width: 120px;
+  }
+  .triangulo {
+    right: -45px;
+    top: 92px;
+  }
+  .div-hover {
+    margin-top: -50px;
+  }
+  .card p {
+    height: 15px;
+  }
 }
