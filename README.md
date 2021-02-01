@@ -6,5 +6,5 @@
 - Pelo cmd acessar a pasta Teste_front-end-main
 - Dentro da pasta, digitar no cmd: npm i
 - Depois de tudo instalado
-- No com digite: node server.js
+- No cmd digite: node server.js
 - Abra o browser e digite localhost:300
